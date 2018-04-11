@@ -12,4 +12,13 @@ def sum_array(numbers)
 end
 
 return counter
-  
+
+def find_item_true(array, item)
+  for item in array
+    if item == array[item]
+      return true
+    else
+      return false
+    end
+  end
+end
