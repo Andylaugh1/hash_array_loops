@@ -4,21 +4,26 @@ def add_array_lengths(array1, array2)
   return add_array1 + add_array2
 end
 
-counter = 0
 def sum_array(numbers)
+  counter = 0
   for number in numbers
     counter += number
   end
+  return counter
 end
 
-return counter
+# return counter
 
-def find_item_true(array, item)
-  for item in array
-    if item == array[item]
+def find_item(array, item)
+  for element in array
+    if element == item
       return true
-    else
-      return false
     end
   end
+  return false
+end
+
+
+def get_first_key(hash)
+  return hash.keys().first()
 end
